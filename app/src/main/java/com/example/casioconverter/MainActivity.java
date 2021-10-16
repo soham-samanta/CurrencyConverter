@@ -21,17 +21,17 @@ public class MainActivity extends AppCompatActivity {
         button = findViewById(R.id.button);
         textView = findViewById(R.id.textView);
         editText = findViewById(R.id.editText);
-//        button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(MainActivity.this, "Thank You for using my App", Toast.LENGTH_SHORT).show();
-//                String s = editText.getText().toString();
-//                int dollar = Integer.parseInt(s);
-//                double inr = 74.17*dollar;
-//                textView.setText("The Value of "+dollar+"$"+" in INR is: "+inr+"(inr)");
-//
-//            }
-//        });
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               Toast.makeText(MainActivity.this, "Thank You for using my App", Toast.LENGTH_SHORT).show();
+                String s = editText.getText().toString();
+                int dollar = Integer.parseInt(s);
+                double inr = 74.17*dollar;
+                textView.setText("The Value of "+dollar+"$"+" in INR is: "+inr+"(inr)");
+
+            }
+       });
     }
 
     public void calc(View view){
